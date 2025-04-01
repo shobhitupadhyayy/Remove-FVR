@@ -70,10 +70,6 @@ async function fixFieldValidityRule(schemaFilePath) {
             }
         }
 
-        // Create a backup file
-        const backupPath = fullPath + '.backup.json';
-        await fs.writeFile(backupPath, JSON.stringify(schemaJson, null, 2), 'utf-8');
-        await log(`📦 Backup created at ${backupPath}`);
 
         // Write updated schema to the original file
         await fs.writeFile(fullPath, JSON.stringify(schemaJson, null, 2), 'utf-8');
