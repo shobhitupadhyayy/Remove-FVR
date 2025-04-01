@@ -22,7 +22,8 @@ git clone https://github.com/contentstack-expert-services/CommerceTool-POC.git
 ```bash
 1) Go to the index.js file in your project and enter the file path for the const variable
 
-    const filePath = 'Specify your local file path here';
+    const filePath = 'Specify your local file path here till schema.json';
+    example - const filePath = 'Users/xyz/exportedData/content_types/schema.json'
 
 ```
 
